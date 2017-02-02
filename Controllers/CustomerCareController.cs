@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
+//[RouteAttribute("customer")]
 [Route("customer")]
 public class CustomerCareController : Controller
 {
