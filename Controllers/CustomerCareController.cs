@@ -1,17 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 
-//[RouteAttribute("customer")]
-[Route("customer")]
+
+
 public class CustomerCareController : Controller
 {
+    [RouteAttribute("customer")]
     
     public IActionResult Index()
     {
         return Ok("This is the index of the CustomerCareController");
     }
+    [RouteAttribute("customer/claims")]
     public IActionResult Claims()
     {
-        return Ok("This is the Quote of the CustomerCareController");
+        return Ok("This is the claims of the CustomerCareController");
     }
 
 }
