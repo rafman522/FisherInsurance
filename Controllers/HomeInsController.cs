@@ -1,15 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 
-
+[RouteAttribute("home")]
 public class HomeInsController : Controller
 {
-    [RouteAttribute("home")]
-    [RouteAttribute("home/index")]
+    
     public IActionResult Index()
     {
         return Ok("This is the index of the HomeINSController");
     }
-    [RouteAttribute("home/quote")]
+    [RouteAttribute("quote")]
     public IActionResult Quote()
     {
         return Ok("This is the Quote of the HomeINSController");
