@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 public class CustomerCareController : Controller
 {
     [RouteAttribute("customer")]
+    [RouteAttribute("customer/index")]
     
     public IActionResult Index()
     {

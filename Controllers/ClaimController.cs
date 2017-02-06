@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 public class ClaimController : Controller
 {
     [RouteAttribute("claim")]
+    [RouteAttribute("claim/index")]
     
     public IActionResult Index()
     {
