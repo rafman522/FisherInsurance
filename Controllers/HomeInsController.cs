@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using System;
+using FisherInsurance.Models;
 
 [RouteAttribute("home")]
 public class HomeInsController : Controller
@@ -13,7 +15,18 @@ public class HomeInsController : Controller
     public IActionResult Quote()
     {
         //return Ok("This is the Quote of the HomeINSController");
-        return View();
+        Quote quote = new Quote 
+        {
+            Id = 343,
+
+            Product = "Home Insurance",
+
+            ExpireDate = DateTime.Now.AddDays(45),
+
+            Price = 33.00M
+
+        };
+        return View(quote);
     }
 
 }
